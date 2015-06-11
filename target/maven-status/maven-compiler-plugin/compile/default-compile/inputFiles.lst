@@ -1,0 +1,8 @@
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/model/User.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/controller/UserController.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/service/ServerReceiveException.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/service/UserServiceImpl.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/WebTaskApplication.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/controller/HomeController.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/jms_service/MessageSender.java
+/home/andrey/Prog/Spring/WebClient/src/main/java/demo/service/UserService.java

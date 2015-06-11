@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="test_user"> <!--xmlns:th="http://www.thymeleaf.org"-->
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"></link>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-resource.js"></script>
+    <script src="/js/angular-route.js"></script>
+    <script src="/js/user.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span6 offset3">
+				<h1>User table</h1>
+				<div ng-controller="UserController">
+					<table>
+						<tr ng-repeat="user in users">
+								<td ng-repeat="(key,value) in user">
+									{{value}}
+								</td>
+								<td>
+								<button ng-click="deleteUser(user)" class="btn btn-small btn-primary" type="submit">
+		                			delete
+		            			</button>
+								</td>
+						</tr>
+					</table>
+				
+					<h1>Create User</h1>
+					<form>
+						<input ng-model="newUser.name" type="text" class="input-block-level" placeholder="name"/>
+						<input ng-model="newUser.surname" type="text" class="input-block-level" placeholder="surname"/>
+						<button class="btn btn-large btn-primary" type="submit" ng-click="addUser()">Add</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
